@@ -1,0 +1,65 @@
+                        CM Creator Installation and Execution
+
+File Format Notes
+-----------------
+1. On Linux, all files with a .txt extension can be read using a text
+   editor, including this file.
+
+2. Data files in the dgdata directory ending in .geo are binary data
+   files and are not suitable for viewing with a text editor or any
+   other program other than CM Creator.
+
+
+Java Installation
+-----------------
+
+1. Check if a Java Developmet Kit (JDK) or Java Runtime Environment
+   (JRE) is installed on your system by opening a command line window,
+   then typing the command: 
+     java -version
+
+   The response should be similar to
+     > java -version
+     java version "1.8.0_152"
+     Java(TM) SE Runtime Environment (build 1.8.0_152-b16)
+     Java HotSpot(TM) Client VM (build 25.152-b16, mixed mode)
+
+2. If the response is something like "command not found", then download 
+   a JDK or JRE version 8 or later from
+
+     https://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+   and install per the instructions.
+
+3. Repeat step 1 to be sure it is installed correctly.
+
+
+
+CM Creator Installation for Linux
+---------------------------------
+
+1. In your home directory, create a directory named jreality. 
+   This can be done either from a Files window, or from a
+   terminal window.  From a terminal window, use the commands: 
+     cd                 change to home directory 
+     mkdir jreality     create the jreality directory
+
+2. Copy the distribution file
+     jreality.tgz
+   to the jreality directory
+     /home/<username>/jreality
+
+3. From a terminal window, type the commands
+     cd /home/<username>/jreality   to go to the installation directory
+     tar xzf jreality.tgz           to unpack the installation files
+
+
+
+CM Creator Execution
+--------------------
+
+1. In the /home/<username>/jreality directory, execute the script
+     ./creator.sh&
+
+
+ 
