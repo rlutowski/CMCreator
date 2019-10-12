@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+#           create installation directory
+mkdir /Applications/jreality
+#
+#           copy distribution files to installation directory
+rm    /Applications/jreality/jreality-mac.zip
+cp    jreality-mac.zip  /Applications/jreality
+#
+#           unpack distribution files in installation directory
+cd    /Applications/jreality
+unzip xzf jreality-mac.zip
+#
+#           run the program
+./creator
+
