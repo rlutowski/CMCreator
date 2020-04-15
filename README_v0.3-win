@@ -1,0 +1,79 @@
+                        CM Creator Installation and Execution
+
+File Format Notes
+-----------------
+1. On Windows, all files with a .txt extension can be read using
+   Wordpad (not Notepad) including this file
+
+2. Data files in the dgdata directory ending in .geo are binary data
+   files, and are not suitable for viewing with a text editor or any
+   other program other than CM Creator.
+
+
+Java Installation
+-----------------
+
+1. Check if a Java Developmet Kit (JDK) or Java Runtime Environment
+   (JRE) is installed on your system by opening a command line window,
+   then typing the command:
+     java -version
+
+   The response should be similar to
+     > java -version
+     java version "1.8.0_152"
+     Java(TM) SE Runtime Environment (build 1.8.0_152-b16)
+     Java HotSpot(TM) Client VM (build 25.152-b16, mixed mode)
+
+2. If the response is something like "command not found", then download 
+   a JRE or JDK version 8 or later from
+
+     http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+   and install per the instructions.
+
+3. Repeat step 1 to be sure it is installed correctly.
+
+
+
+CM Creator Installation for Windows
+-----------------------------------
+
+1 Download the two distribution files  
+     jreality_v0.3-win.tgz
+     install_v0.3-win.sh
+
+2 Execute the file
+     install_v0.3-win.sh
+
+
+CM Creator Execution
+--------------------
+
+In the C:\jreality\v0.3 directory, execute the file
+     creator_v0.3.bat
+
+
+Version Summary
+---------------
+v0.3 (this version):
+* geometric surface generation tool
+* enhanced surface modification tools
+* access data model directory anywhere in file system
+
+v0.2:
+* primitive surface modification tool
+* integral help capability
+
+v0.1:
+* create a Compartmentalized Model from assemblies and exterior surfaces
+* subdivide ext surfaces using partitions defined interactively
+* automatically create compartment and space descriptions from partitions
+* display interior and exterior geometry in 3 orthoganal views
+* calculate and display section cuts of interior and exterior geometry
+* allow independent zooming for each section view
+* create assembly hierarchy by attaching one assembly to another
+* define basic transforms for assembly rotation and translation
+* define cum transforms so moving an assembly moves its attached assemblies
+* save interior and exterior geometry in binary and text files
+
+
